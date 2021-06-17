@@ -15,7 +15,7 @@ router.post("/",async (req,res) => {
         res.status(200).json(saveUser);
        }
 catch(err){
-    res.json({"err":err});
+    res.status(500).json({"err":err});
 }
 
 });
@@ -27,7 +27,7 @@ router.get("/",async (req,res) => {
         res.status(200).json(getALL);
        }
 catch(err){
-    res.json({"err":err});
+    res.status(500).json({"err":err});
 }
 
 });
@@ -39,7 +39,7 @@ router.get("/:id",async (req,res) => {
         res.status(200).json(getbyid);
        }
 catch(err){
-    res.json({"err":err});
+    res.status(500).json({"err":err});
 }
 });
 
@@ -51,7 +51,7 @@ router.put("/:id",async (req,res) => {
         res.status(200).json(updateusers);
        }
 catch(err){
-    res.json({"err":err});
+    res.status(500).json({"err":err});
 }
 });
 
@@ -62,7 +62,7 @@ router.delete("/:id",async (req,res) => {
         res.status(200).json(deleteusers);
        }
 catch(err){
-    res.json({"err":err});
+    res.status(500)json({"err":err});
 }
 });
 
