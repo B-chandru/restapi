@@ -20,7 +20,7 @@ app.listen(port,()=>{
 
 
 // connecting mongodb
-mongoose.connect(process.env.MYDB_CONNECTION, {useNewUrlParser: true, useUnifiedTopology: true} , (err)=>{
+mongoose.connect(process.env.MYDB_CONNECTION, {useNewUrlParser: true, useUnifiedTopology: true , useCreateIndex: true, useFindAndModify: false} , (err)=>{
     if(err) {console.log("DB not connected")}
     console.log("DB connected...")
 });
