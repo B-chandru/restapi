@@ -49,14 +49,14 @@ To run this project, you will need to add the following environment variables to
 
 #### Get all  the details
 
-```http
-  GET http://localhost:5000/admin/
+```bash
+  http://localhost:5000/admin/
 ```
 
 
 #### post 
 
-```http
+```bash
    http://localhost:5000/admin/
 ```
 for post request the json formate should be like this :
@@ -70,17 +70,17 @@ for post request the json formate should be like this :
 ```
 #### Get details by id
 
-```http
+```bash
    http://localhost:5000/admin/:id
 ```
   #### Put
 
-```http
+```bash
    http://localhost:5000/admin/:id
 ```
   #### Delete 
 
-```http
+```bash
    http://localhost:5000/admin/:id
 ```
   
